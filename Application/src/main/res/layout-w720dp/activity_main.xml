@@ -26,21 +26,20 @@
           android:layout_height="match_parent"
           android:layout_weight="1"
           android:orientation="vertical">
+        <com.github.anastr.speedviewlib.AwesomeSpeedometer
+            android:id="@+id/Speed"
+            android:layout_width="244dp"
+            android:layout_height="500dp"
+            android:layout_weight="1">
+
+        </com.github.anastr.speedviewlib.AwesomeSpeedometer>
 
         <FrameLayout
               style="@style/Widget.SampleMessageTile"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
-            <TextView
-                  style="@style/Widget.SampleMessage"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:paddingLeft="@dimen/margin_medium"
-                  android:paddingRight="@dimen/margin_medium"
-                  android:paddingTop="@dimen/margin_large"
-                  android:paddingBottom="@dimen/margin_large"
-                  android:text="@string/intro_message" />
+
         </FrameLayout>
 
         <View
@@ -53,7 +52,7 @@
               android:id="@+id/log_fragment"
               android:layout_width="match_parent"
               android:layout_height="0px"
-              android:layout_weight="1" />
+              android:layout_weight="" />
 
     </LinearLayout>
 
@@ -61,24 +60,12 @@
           android:layout_width="1dp"
           android:layout_height="match_parent"
           android:background="@android:color/darker_gray" />
-    <LinearLayout
-        android:layout_weidth="2"
-        android:layout_width="1px"
-        android:layout_height="match_parent">
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="1111" />
-    </LinearLayout>
 
 
     <FrameLayout
           android:id="@+id/sample_content_fragment"
-          android:layout_weight="1"
+          android:layout_weight="2"
           android:layout_width="0px"
           android:layout_height="match_parent" />
 
